@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bai1
+    // myColor = ["Red", "Green", "White", "Black"];
+    //
+    //
+    // console.log(myColor.toString());
+    // console.log(myColor.join());
+
+    // Bai2
+    // var num = prompt("nhap vao so");
+    // // nhap vao so bat ki
+    // var str = num.toString()
+    // // chuyen so nhap vao sang chuoi
+    // var result = [str[0]];
+    // // tao mang luu gia tri cua so nhap vao
+    // length=str.length;
+    // for(var x = 1;x<length;x++) {
+    //     // duyet mang cac phan tu torng mang str
+    //     if (str[x-1] %2===0 && str[x] %2===0 ) {
+    //         // dieu kien la so chan va lien ke
+    //         result.push('-',str[x]);
+    //     } else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // alert(result.join(''));
+
+    // Bai3
+    // Khai báo và khởi tạo chuỗi đầu vào
+    var str = prompt('nhap vao chuoi');
+
+    // Định nghĩa hằng số cho các chữ cái in hoa và chữ thường
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+    // Khởi tạo một mảng để lưu kết quả
+    var result = [];
+
+    for(let x=0; x<str.length ;x++) {
+        if (UPPER.indexOf(str[x])!== -1) {
+            result.push(str[x].toLowerCase());
+        }
+        else if (LOWER.indexOf(str[x] !== -1)) {
+            result.push(str[x].toUpperCase());
+        }
+        else {
+            result.push(str[x]);
+        }
+    }
+    alert(result.join(''));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Nhap vao so can tim:</h2>
+<input type="text" id="string">
+<button onclick="translate1()">Dich</button>
+<p id="result">ket qua:</p>
+<script>
+    function translate1() {
+        let eng = ['banana', 'apple', 'lemon'];
+        let vie = ['chuoi', 'tao', 'chanh'];
+        let str = document.getElementById('string').value;
+        let result = "khong thay";  // Giả định từ đầu không tìm thấy
+
+        for (let i = 0; i < eng.length; i++) {
+            if (str === eng[i]) {
+                result = vie[i];
+                break;  // Dừng vòng lặp khi tìm thấy
+            }
+        }
+
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
